@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<meta>
+    <meta charset="UTF-8"></meta>
+    <meta name="keywords" content="<?php echo $res['keywords'];?>"></meta>
+    <meta name="description" content="<?php echo $res['des'];?>"></meta>
+    <title><?php echo $res['title'];?></title>
+    <link rel="stylesheet" type="text/css" href="../static/css/icon/iconfont.css">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <link rel="stylesheet" href="../static/css/footer.css">
+    <script src="../static/js/jquery-3.3.1.js"></script>
+    <script src="../static/js/show.js"></script>
+
+</head>
+
+<body>
+
+    <div class="t-t">
+        <div class="logo">
+            <img src="../static/image/logo.png">
+            <ul>
+                <li><a href="index.php" class="<?php if(!isset($_GET['id'])){echo 'l-a';}?>">网站首页</a></li>
+
+                <?php for($i=0;$i<count($cate);$i++){ ?>
+
+                    <li>
+                        <a href="list.php?id=<?php echo $cate[$i]['id'];?>" class="conten <?php if(isset($_GET['id'])){echo $_GET['id'] == $cate[$i]['id'] ? 'l-a' : '';} ?>"><?php echo $cate[$i]['title']; ?></a>
+                    </li>
+
+                <?php } ?>
+
+            </ul>
+        </div>
+    </div>

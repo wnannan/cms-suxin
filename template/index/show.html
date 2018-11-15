@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="../static/css/show.css">
+<!--<script src="../static/js/show.js"></script>-->
+
+
+
+
+	<div class="main">
+		
+		<div class="m-l">
+			<h1><?php echo $article['title'];?></h1>
+			<p>
+				<?php echo $article['times'] ?>&nbsp;&nbsp;
+				<?php echo $article['author'];?>&nbsp;&nbsp;
+				<i class="iconfont icon-ai-eye"></i>
+				<span class="count"><?php echo $article['count'];?></span>
+			</p>
+			<div class="in">
+				<?php echo $article['content'];?>
+			</div>
+
+			<!--<a href="#" class="l">上一篇：爱莲说</a>-->
+			<!--<a href="#" class="r">下一篇：没有了</a>-->
+			<?php echo $prestr; ?>
+			<?php echo $nextstr; ?>
+		</div>
+		<?php include_once 'rslide.php';?>
+	</div>
+	<div class="f1"></div>
+
+	<?php include_once '../index/footer.php'; ?>

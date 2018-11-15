@@ -1,0 +1,59 @@
+<link rel="stylesheet" type="text/css" href="../static/css/comment.css">
+<script src="../static/js/comment.js"></script>
+
+	<div class="main">
+		<h1><?php echo $cate['des']; ?></h1>
+		<div class="mainL">
+			<ul class="m-l">
+
+				<li class="liuyan">
+					<h4>
+						张三
+						<small></small>
+					</h4>
+					<p> 大厦</p>
+				</li>
+
+			</ul>
+			<a href="javascript:void(false);" class="more">加载更多</a>
+		</div>
+
+
+
+
+		<form action="comment.php" id="myform"></form>
+		<div class="m-r">
+				<input type="text" placeholder="姓名" form="myform" name="names"><!-- 搜索框 -->
+				<input type="text" placeholder="联系电话" form="myform" name="tel">
+				<textarea placeholder="您的建议" rows="7" cols="43" form="myform" name="content"></textarea>
+				<input type="text" placeholder="验证码" form="myform">
+				<button form="myform" type="submit">提交</button>
+		</div>
+	</div>
+
+
+<?php include_once 'footer.php';?>
+<!--
+<script>
+	let ml = document.querySelector(".m-l");
+	let name = document.querySelector(".m-r input");
+	let te = document.querySelector(".m-r textarea");
+	let btn = document.querySelector("button");
+	let sma = document.querySelectorAll("h4 small");
+	// console.log(date);
+	btn.onclick = function(){
+		let name1 = name.value;
+		let text = te.value;
+		let str = `<div class="liuyan">
+				<h4>${name1}<small></small></h4>
+				<p>${text}</p>
+			</div>`
+		ml.innerHTML+=str;
+		text.value="";
+		te.value = "";
+	}
+	let date = new Date();
+	for(let i=0;i<sma.length;i++){
+		sma[i].innerHTML = date.getFullYear() + "-" + date.getMonth() + "-" + date.getDay() + "&nbsp;" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+	}
+</script>-->

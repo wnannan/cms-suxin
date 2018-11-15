@@ -1,0 +1,54 @@
+
+<?php include_once './header.php'; ?>
+
+<div class="content">
+
+    <?php include_once './slide.php'; ?>
+
+    <div class="contentRight">
+        <!--图片对应的头信息-->
+        <form action="insertgoods.php" method="post" enctype="multipart/form-data">
+            <!--<div class="form-group">
+                <label for="exampleInputEmail">推荐位栏目</label>
+                <select name="id" id="exampleInputEmail" class="form-control">
+
+
+                    <?php echo $str; ?>
+
+                </select>
+            </div>-->
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">推荐位名称</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Title" name="title">
+            </div>
+
+
+           <!-- <div class="form-group">
+                &lt;!&ndash;使用富文本编辑器&ndash;&gt;
+                <script id="editor" name="content" type="text/plain" style="min-height:300px;"></script>
+            </div>
+-->
+            <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        //实例化编辑器
+        var ue = UE.getEditor('editor',{
+            toolbars: [
+                ['fullscreen', 'source', 'undo', 'redo','simpleupload','insertimage'],
+                ['bold', 'italic', 'underline', 'fontborder', 'strikethrough', 'superscript', 'subscript', 'removeformat', 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'forecolor', 'backcolor', 'insertorderedlist', 'insertunorderedlist', 'selectall', 'cleardoc'],
+                ['justifyleft','justifyright','justifycenter','justifyjustify',],
+            ]
+        });
+    })
+</script>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

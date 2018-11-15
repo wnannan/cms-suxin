@@ -1,0 +1,39 @@
+.navbar{
+    border-radius: 0;
+}
+.content{
+    width:100%;
+    position: absolute;
+    top:52px;
+    bottom: 0;
+    padding-top: 40px;
+    /*background: red;*/
+}
+.content > .contentLeft{
+    width: 200px;
+
+}
+.content > .contentRight{
+    position: absolute;
+    left:199px;
+    right:0;
+    top:18px;
+    /*height: 100%;*/
+    padding: 20px;
+    box-sizing: border-box;
+    border-left: 1px solid #e7e7e7 ;
+}
+.list-group-item:first-child , .list-group-item:last-child{
+    border-radius: 0;
+}
+.list-group-item{
+    padding: 10px 25px;
+}
+h4{
+    margin-left: 10px;
+}
+h5{
+    margin: 20px 0 15px 10px;
+    cursor: pointer;
+}
+

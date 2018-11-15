@@ -1,0 +1,47 @@
+<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+<style>
+    body {
+        background: rgb(242,242,242);
+    }
+    .t-t {
+        background-color: #fff;
+        border-bottom: 1px solid rgb(200,200,200);
+    }
+    .container {
+        margin: 100px auto 0;
+        padding: 20px;
+        width: 1170px;
+
+    }
+    .logo li a {
+        color: #000;
+        line-height: 80px;
+    }
+    .row {
+        display: inline-block;
+        float: left;
+        width: 820px;
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <ul class="list-group">
+            <?php foreach($result as $v){ ?>
+            <li class="list-group-item">
+                <h3><a href="show.php?id=<?php echo $v['id'];?>&&gid=<?php echo $v['gid'];?>"><?php echo $v['title'];?></a></h3>
+                <h5>商品描述：</h5>
+                <p><?php echo $v['des'];?></p>
+            </li>
+            <?php }?>
+        </ul>
+    </div>
+    <?php include_once 'rslide.php';?>
+
+</div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+C:\Users\王雅囡\Desktop>mysql -uroot -p      	/*进入用户名为root的数据库*/
+Enter password:                              	/*密码为空，直接回车*/
+
+mysql> show databases;                     	/*显示目前有的数据库名称*/
+
+mysql> use 10.8-data;                      	/*使用某个数据库*/
+
+mysql> show tables;                        	/*数据库中所有的表*/
+
+mysql> desc student;                       	/*查看表结构*/
+
+mysql> select * from student;              	/*查询表中所有记录*/
+	
+mysql> select name from student;           	/*查询表中字段名为name*/
+
+mysql> select name,age from student;		/*表中字段名为name和age*/
+
+					   	/*在表中添加记录*/
+mysql> insert into student (id,name,age,sex,phone,address) value (3,'lisi',10,'男',111111,'山西太原');
+
+
+mysql> update student set age=23 where id=4;	/*修改表中id=4记录中的age为23*/
+
+
+mysql> delete from student where id=2;		/*删除表中id=2的记录*/
+

@@ -1,0 +1,97 @@
+<link rel="stylesheet" type="text/css" href="../static/css/indexhtml.css">
+<link rel="stylesheet" type="text/css" href="../static/css/swiper-4.4.1.min.css">
+
+<script src="../static/js/swiper-4.4.1.min.js"></script>
+<script src="../static/js/animate.js"></script>
+<script src="../static/js/index.js"></script>
+<div class="top">
+		<div class="banner">
+			<ul>
+				<?php foreach($result as $v){?>
+
+				<li class="t1"><a href="show.php?id=<?php echo $v['id'];?>&&gid=<?php echo $v['gid'];?>"><img src="<?php echo $v['thumb'];?>"></a></li>
+				<?php }?>
+
+			</ul>
+			<div class="t-left"><i class="iconfont icon-zuojiantou"></i></div>
+			<div class="t-right"><i class="iconfont icon-youjiantou"></i></div>
+			<!--<span>亭亭玉立、香气悠远</span>-->
+			<div class="btn">
+				<div class="btn1"></div>
+				<div class="btn2"></div>
+			</div>
+		</div>
+	</div>
+</div>
+	<div class="middle"> <!-- 中间轮播图 -->
+		<h1><?php echo $cate[0]['title'];?></h1>
+		<div class="more">
+			<a href="#">More</a>
+		</div>
+		<p>花艺师与您一同分享素馨花卉给您的生活带去的花香世界。</p>
+		<div class="turn">
+			<div class="left swiper-button-prev"><img src="../static/image/icon-carousel_8fef694.png"></div>
+			<div class="right swiper-button-next"><img src="../static/image/icon-carousel_8fef694.png"></div>
+		</div>
+		<div class="box swiper-container">
+		<div class="m-banner swiper-wrapper">
+
+			<?php
+			foreach($res3 as $v){ ?>
+				<div class="m-m swiper-slide">
+					<!--缩略图-->
+					<div class="img"><img src="<?php echo $v['thumb'];?>" alt=""></div>
+					<h3><?php echo $v['title'];?></h3>
+					<p><?php echo $v['des'];?></p>
+					<a href="show.php?id=<?php echo $v['id'];?>&&gid=<?php echo $v['gid'];?>">查看详情</a>
+				</div>
+			<?php } ?>
+
+		</div>
+
+		</div>
+	</div>	
+	<div class="mm"> <!-- 素馨花语 -->
+		<div class="middle-1">
+			<div>
+				<h1><?php echo $cate[1]['title'];?></h1>
+				<div class="more">
+					<a href="#">More</a>
+				</div>
+			</div>
+			<div class="yuy">
+
+				<?php
+			foreach($res2 as $v){
+				?>
+				<div class="yu">
+					<div class="y-img">
+						<a href="#"><img src="<?php echo $v['thumb'];?>"></a>
+					</div>
+					<div class="y-text">
+						<h3><a href="show.php?id=2&&gid=<?php echo $v['gid']?>"><?php echo $v['title'];?></a></h3>
+						<p><?php echo $v['des'];?></p>
+						<p><?php echo substr($v['times'],0,10);?>&nbsp;&nbsp;<?php echo $v['author'];?>&nbsp;&nbsp;<i class="iconfont icon-ai-eye"></i><?php echo $v['count'];?></p>
+					</div>
+				</div>
+				<?php } ?>
+			</div>		
+		</div>
+	</div>
+
+	<div class="work">
+		<p class="w-p"><?php echo $res['des'];?></p>
+		<p >
+			经营范围：<?php echo $res['ran'];?><br>
+
+公司地址：<?php echo $res['address'];?><br>
+
+联系电话：<?php echo $res['tel'];?><br>
+
+电子邮箱：<?php echo $res['email'];?>
+		</p>
+		<img src="../static/image/staticimage.png">
+	</div>
+
+<?php include_once 'footer.php'; ?>
+

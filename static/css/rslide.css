@@ -1,0 +1,36 @@
+ .m-r {
+    text-align: left;
+    display: inline-block;
+    background-color: #fff;
+    float: right;
+    padding: 15px;
+    width: 280px;
+}
+.m-r input {
+    width: 225px;
+    height: 30px;
+    border: 1px solid rgb(200,200,200);
+    border-radius: 30px;
+    padding-left: 15px;
+    outline: none;
+}
+.m-r dl {
+    width: 240px;
+    height: 215px;
+    margin: 20px auto;
+    border-top: 1px solid rgb(200,200,200);
+    border-bottom: 1px solid rgb(200,200,200);
+}
+h3 {
+    font-weight: normal;
+}
+.m-r dd {
+    line-height: 40px;
+    margin-left: 0px;
+    padding-left: 20px;
+    border: 1px solid rgb(200,200,200);
+    color: rgb(100,100,100);
+}
+.m-r dl>dd:nth-child(2),dl>dd:nth-child(3) {
+    border-bottom: 0;
+}

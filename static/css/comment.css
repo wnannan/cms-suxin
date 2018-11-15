@@ -1,0 +1,140 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: rgb(242,242,242);
+}
+.t-t {
+	background-color: rgba(255,255,255,1);
+	border-bottom: 1px solid rgb(200,200,200);
+
+}
+.logo li a {
+	color: #000;
+}
+.logo .l-a {
+	color: #16b0dc;
+}
+.main {
+	margin: 0 auto;
+	padding-top: 100px;
+	text-align: center;
+	width: 1200px;
+	/*height: 1050px;*/
+	overflow: hidden;
+}
+h1 {
+	color: #F67A82;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+.main .mainL {
+	display: inline-block;
+	float: left;
+	width: 700px;
+	background-color: #fff;
+	padding: 30px;
+	margin-bottom: 40px;
+}
+.mainL .m-l {
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	text-align: left;
+}
+.mainL ul li {
+	padding: 10px;
+	width: 700px;
+	height: 60px;
+	line-height: 0;
+	border-bottom: 1px solid rgb(200,200,200);
+	border-radius: 6px;
+}
+.mainL ul li:hover {
+	background: #eee;
+}
+.mainL ul li h4 {
+	font-weight: normal;
+	color: #37474f;
+}
+.mainL ul li small {
+	float: right;
+	color: #a3afb7;
+	font-size: 75%;
+}
+.mainL ul li p {
+	line-height: 20px;
+	font-size: 14px;
+	color: #76838f;
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.main .more {
+	display: inline-block;
+	width: 100%;
+	height: 40px;
+	background-color: #e4eaec;
+	line-height:40px;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+	color: #76838f;
+	margin: 20px auto;
+}
+
+
+.main .m-r {
+	text-align: left;
+	display: inline-block;
+	width: 350px;
+	height: 360px;
+	background-color: #fff;
+	float: right;
+	padding: 30px;
+}
+.m-r input {
+	width: 330px;
+	height: 30px;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 5px;
+	padding-left: 15px;
+	outline: none;
+	margin-bottom: 20px;
+}
+.m-r textarea {
+	margin-bottom: 20px;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 14px;
+	resize: none;
+	outline: none;
+}
+.m-r button {
+	width: 100%;
+	height: 36px;
+	background-color: #62a8ea;
+	color: #fff;
+	border: 0;
+}
+dl {
+	width: 240px;
+	height: 215px;
+	margin: 20px auto;
+	border-top: 1px solid rgb(200,200,200);
+	border-bottom: 1px solid rgb(200,200,200);
+}
+h3 {
+	font-weight: normal;
+}
+dd {
+	line-height: 40px;
+	margin-left: 0px;
+	padding-left: 20px;
+	border: 1px solid rgb(200,200,200);
+	color: rgb(100,100,100);
+}
+dl>dd:nth-child(2),dl>dd:nth-child(3) {
+	border-bottom: 0;
+}

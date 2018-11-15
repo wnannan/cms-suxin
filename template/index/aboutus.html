@@ -1,0 +1,25 @@
+<link rel="stylesheet" type="text/css" href="../static/css/aboutus.css">
+
+
+	<div class="main">
+		<img src="../static/image/long.jpg">
+	</div>
+	
+	<div class="work">
+		<div class="winner">
+			<p class="w-p"><?php echo $res['des'];?></p>
+			<p >
+				经营范围：<?php echo $res['ran'];?><br>
+
+	公司地址：<?php echo $res['address'];?><br>
+
+	联系电话：<?php echo $res['tel'];?><br>
+
+	电子邮箱：<?php echo $res['email'];?>
+			</p>
+			<img src="../static/image/staticimage.png">
+		</div>
+	</div>
+
+
+<?php include_once 'footer.php'; ?>

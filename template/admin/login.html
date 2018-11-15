@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台登录页面</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css ">
+    <!--链接CSS路径相对于login.php-->
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-lg-offset-3">
+            <div class="panel panel-info">
+                <!--form表单请求方式为post必须加enctype头信息,
+                novalidate不进行表单验证直接跳转-->
+                <form action="login.php" method="post" enct ype="application/x-www-form-urlencoded">
+                    <div class="form-group">
+                        <label for="exampleInputUsername">Username</label>
+                        <!--input属性
+                        required 让它为必填字段,
+                        pattern 验证格式可以写正则
+                        name后台传递数据-->
+                        <input type="text" class="form-control" id="exampleInputUsername" placeholder="Username" required pattern="\w{3,10}" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password" required pattern="[0-9]{5,10}" name="password">
+                    </div>
+                    <!--button属性
+                    formaction="url"可提交到另外一个位置
+                    formvalidate 是否验证
+                    formenctype=""头信息-->
+                    <button type="submit" class="btn btn-info">登录</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
